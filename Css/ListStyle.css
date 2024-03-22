@@ -1,0 +1,235 @@
+:root{
+    --mainColor:#8904;  
+    /* this is a code for styling header container*/
+}
+
+/* this is a code for styling header*/
+header{
+    background-color: var(--mainColor);
+}
+/* this is a code for styling container*/
+.Container{
+    width: 95%;
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.container-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+    padding: 5em 0;
+   
+
+}
+
+
+/* Other styles for icons and links */
+
+.list{
+    display: flex ;
+}
+
+
+.listItem:hover {
+  background-color: #0056b3; /* Button background color on hover */
+  border-color: #0056b3; /* Button border color on hover */
+}
+
+
+.listItem{
+
+
+
+  display: inline-block;
+        padding: 10px 20px;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #fff; /* Button text color */
+        background-color: hsl(200, 6%, 10%); /* Button background color */
+        border: 1px solid transparent; /* Button border */
+        border-radius: 5px; /* Button border radius */
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition effect */
+
+    margin-left: 2em;
+    color:rgb(99, 106, 105);
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* font sytling from google font */
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+}
+.activeItem{
+    color: orange;
+    border-bottom: .1em double black;
+    background-color: #0056b3; /* Active button background color */
+    border-color: #0056b3;  /*Active button border color */
+}
+
+.icon-link {
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set color */
+  margin: 0 10px; /* Add margin between icons */
+}
+
+.icon-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+.icon{
+    color:royalblue;
+    font-size: 1.5rem !important;/* this code for icon */
+    margin-right: 1em;
+    margin-left: 1.5em;
+}
+/* media querries*/
+@media screen and (max-width:1100px) {
+    
+    .icon{
+        margin-left: 1em;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    html{
+        font: size 13px; 
+    }
+    .container-flex{
+        flex-direction: column;
+
+    }
+    .logo{
+        width: 150px;
+    }
+    .icon{
+        margin: 1em 1.5em;
+    }
+    
+}
+@media screen and (max-width:568px) { 
+    html{
+        font: size 11px; 
+    }
+    .list{
+        flex-direction: column;
+    }
+    .listItem{
+        margin-top: .2em;
+    }
+    .icon{
+        width: 1em 1.5em;
+    }
+    .logo{
+        width: 10px;
+    }
+}

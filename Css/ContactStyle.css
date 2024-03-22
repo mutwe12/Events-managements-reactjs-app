@@ -1,0 +1,51 @@
+.contact{
+    max-width: 990px;
+    margin:2em auto;
+    /**background-color: yellow;*/
+
+    .btn {
+        width: auto; /* Adjust width as needed */
+        padding: 5px 10px; /* Adjust padding to make it smaller */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        display: flex;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    
+
+}
+input{
+    width: 100%;
+    padding: .7em;
+    margin-bottom: 1em;
+    border: 0.3em double var(--mainColor);
+    outline: none;
+    font-size: 1.1em;
+
+
+}
+
+
+
+label{
+    font: size 1.1rem;
+    font-weight: bold;
+
+}
+@media screen and (max-width:768px) {
+    .contact{
+        width: 70%;
+        margin: 1em auto;
+    }
+    input{
+        width: 100%;
+        padding: 3em;
+        border: 1em solid var(--mainColor);
+    }
+    
+}
